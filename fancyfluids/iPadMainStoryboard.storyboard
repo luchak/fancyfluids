@@ -12,23 +12,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YyF-Vk-NLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xPF-MG-mVc" customClass="FluidViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KJ0-Sm-KMb" customClass="GLKView">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-210" y="-460"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="FluidViewController" superclassName="GLKViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FluidViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
-        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
