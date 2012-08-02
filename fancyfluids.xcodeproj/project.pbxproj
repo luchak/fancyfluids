@@ -23,6 +23,7 @@
 		C90CB0CC15CA56F800B42BB3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB0CB15CA56F800B42BB3 /* GLKit.framework */; };
 		C90CB0D315CA58E800B42BB3 /* FluidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CB0D215CA58E800B42BB3 /* FluidViewController.m */; };
 		C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */; };
+		C95C188D15CAFF6300BE1095 /* TTShaderLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C188C15CAFF6300BE1095 /* TTShaderLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		C90CB0D115CA58E800B42BB3 /* FluidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluidViewController.h; sourceTree = "<group>"; };
 		C90CB0D215CA58E800B42BB3 /* FluidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluidViewController.m; sourceTree = "<group>"; };
 		C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadMainStoryboard.storyboard; sourceTree = "<group>"; };
+		C95C188B15CAFF6300BE1095 /* TTShaderLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShaderLibrary.h; sourceTree = "<group>"; };
+		C95C188C15CAFF6300BE1095 /* TTShaderLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTShaderLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				C90CB0D115CA58E800B42BB3 /* FluidViewController.h */,
 				C90CB0D215CA58E800B42BB3 /* FluidViewController.m */,
 				C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */,
+				C95C188B15CAFF6300BE1095 /* TTShaderLibrary.h */,
+				C95C188C15CAFF6300BE1095 /* TTShaderLibrary.m */,
 			);
 			path = fancyfluids;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				C90CB0A515CA562000B42BB3 /* main.m in Sources */,
 				C90CB0A915CA562000B42BB3 /* AppDelegate.m in Sources */,
 				C90CB0D315CA58E800B42BB3 /* FluidViewController.m in Sources */,
+				C95C188D15CAFF6300BE1095 /* TTShaderLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +442,7 @@
 				C90CB0C315CA562000B42BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C90CB0C415CA562000B42BB3 /* Build configuration list for PBXNativeTarget "fancyfluidsTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				C90CB0C615CA562000B42BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
