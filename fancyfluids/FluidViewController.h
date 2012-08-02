@@ -1,16 +1,13 @@
 //
-//  AppDelegate.h
+//  FluidViewController.h
 //  fancyfluids
 //
 //  Created by Matt Stanton on 8/1/12.
 //  Copyright (c) 2012 Carnegie Mellon University. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface FluidViewController : GLKViewController
 
 @end

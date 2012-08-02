@@ -18,6 +18,11 @@
 		C90CB0B315CA562000B42BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB09A15CA562000B42BB3 /* Foundation.framework */; };
 		C90CB0BB15CA562000B42BB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0B915CA562000B42BB3 /* InfoPlist.strings */; };
 		C90CB0BE15CA562000B42BB3 /* fancyfluidsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CB0BD15CA562000B42BB3 /* fancyfluidsTests.m */; };
+		C90CB0C815CA56E900B42BB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB0C715CA56E900B42BB3 /* QuartzCore.framework */; };
+		C90CB0CA15CA56F300B42BB3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB0C915CA56F300B42BB3 /* OpenGLES.framework */; };
+		C90CB0CC15CA56F800B42BB3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB0CB15CA56F800B42BB3 /* GLKit.framework */; };
+		C90CB0D315CA58E800B42BB3 /* FluidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CB0D215CA58E800B42BB3 /* FluidViewController.m */; };
+		C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +40,24 @@
 		C90CB09815CA562000B42BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C90CB09A15CA562000B42BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C90CB09C15CA562000B42BB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C90CB0A015CA562000B42BB3 /* fancyfluids-Info.plist */ = {isa = PBXFileReference; path = "fancyfluids-Info.plist"; sourceTree = "<group>"; };
+		C90CB0A015CA562000B42BB3 /* fancyfluids-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fancyfluids-Info.plist"; sourceTree = "<group>"; };
 		C90CB0A215CA562000B42BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C90CB0A415CA562000B42BB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C90CB0A615CA562000B42BB3 /* fancyfluids-Prefix.pch */ = {isa = PBXFileReference; path = "fancyfluids-Prefix.pch"; sourceTree = "<group>"; };
-		C90CB0A715CA562000B42BB3 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C90CB0A615CA562000B42BB3 /* fancyfluids-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fancyfluids-Prefix.pch"; sourceTree = "<group>"; };
+		C90CB0A715CA562000B42BB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C90CB0A815CA562000B42BB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C90CB0AF15CA562000B42BB3 /* fancyfluidsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fancyfluidsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90CB0B015CA562000B42BB3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C90CB0B815CA562000B42BB3 /* fancyfluidsTests-Info.plist */ = {isa = PBXFileReference; path = "fancyfluidsTests-Info.plist"; sourceTree = "<group>"; };
+		C90CB0B815CA562000B42BB3 /* fancyfluidsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fancyfluidsTests-Info.plist"; sourceTree = "<group>"; };
 		C90CB0BA15CA562000B42BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C90CB0BC15CA562000B42BB3 /* fancyfluidsTests.h */ = {isa = PBXFileReference; path = fancyfluidsTests.h; sourceTree = "<group>"; };
+		C90CB0BC15CA562000B42BB3 /* fancyfluidsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fancyfluidsTests.h; sourceTree = "<group>"; };
 		C90CB0BD15CA562000B42BB3 /* fancyfluidsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fancyfluidsTests.m; sourceTree = "<group>"; };
+		C90CB0C715CA56E900B42BB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C90CB0C915CA56F300B42BB3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C90CB0CB15CA56F800B42BB3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C90CB0D115CA58E800B42BB3 /* FluidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluidViewController.h; sourceTree = "<group>"; };
+		C90CB0D215CA58E800B42BB3 /* FluidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluidViewController.m; sourceTree = "<group>"; };
+		C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadMainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90CB0CC15CA56F800B42BB3 /* GLKit.framework in Frameworks */,
+				C90CB0CA15CA56F300B42BB3 /* OpenGLES.framework in Frameworks */,
+				C90CB0C815CA56E900B42BB3 /* QuartzCore.framework in Frameworks */,
 				C90CB09915CA562000B42BB3 /* UIKit.framework in Frameworks */,
 				C90CB09B15CA562000B42BB3 /* Foundation.framework in Frameworks */,
 				C90CB09D15CA562000B42BB3 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +90,9 @@
 		C90CB08915CA562000B42BB3 = {
 			isa = PBXGroup;
 			children = (
+				C90CB0CB15CA56F800B42BB3 /* GLKit.framework */,
+				C90CB0C915CA56F300B42BB3 /* OpenGLES.framework */,
+				C90CB0C715CA56E900B42BB3 /* QuartzCore.framework */,
 				C90CB09E15CA562000B42BB3 /* fancyfluids */,
 				C90CB0B615CA562000B42BB3 /* fancyfluidsTests */,
 				C90CB09715CA562000B42BB3 /* Frameworks */,
@@ -109,6 +126,9 @@
 				C90CB0A715CA562000B42BB3 /* AppDelegate.h */,
 				C90CB0A815CA562000B42BB3 /* AppDelegate.m */,
 				C90CB09F15CA562000B42BB3 /* Supporting Files */,
+				C90CB0D115CA58E800B42BB3 /* FluidViewController.h */,
+				C90CB0D215CA58E800B42BB3 /* FluidViewController.m */,
+				C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */,
 			);
 			path = fancyfluids;
 			sourceTree = "<group>";
@@ -215,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90CB0A315CA562000B42BB3 /* InfoPlist.strings in Resources */,
+				C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +272,7 @@
 			files = (
 				C90CB0A515CA562000B42BB3 /* main.m in Sources */,
 				C90CB0A915CA562000B42BB3 /* AppDelegate.m in Sources */,
+				C90CB0D315CA58E800B42BB3 /* FluidViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
