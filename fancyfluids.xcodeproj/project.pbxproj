@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90CB09915CA562000B42BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB09815CA562000B42BB3 /* UIKit.framework */; };
+		C90CB09B15CA562000B42BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB09A15CA562000B42BB3 /* Foundation.framework */; };
+		C90CB09D15CA562000B42BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB09C15CA562000B42BB3 /* CoreGraphics.framework */; };
+		C90CB0A315CA562000B42BB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0A115CA562000B42BB3 /* InfoPlist.strings */; };
+		C90CB0A515CA562000B42BB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CB0A415CA562000B42BB3 /* main.m */; };
+		C90CB0A915CA562000B42BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CB0A815CA562000B42BB3 /* AppDelegate.m */; };
+		C90CB0B115CA562000B42BB3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB0B015CA562000B42BB3 /* SenTestingKit.framework */; };
+		C90CB0B215CA562000B42BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB09815CA562000B42BB3 /* UIKit.framework */; };
+		C90CB0B315CA562000B42BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90CB09A15CA562000B42BB3 /* Foundation.framework */; };
+		C90CB0BB15CA562000B42BB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0B915CA562000B42BB3 /* InfoPlist.strings */; };
+		C90CB0BE15CA562000B42BB3 /* fancyfluidsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CB0BD15CA562000B42BB3 /* fancyfluidsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90CB0B415CA562000B42BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90CB08B15CA562000B42BB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90CB09315CA562000B42BB3;
+			remoteInfo = fancyfluids;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C90CB09415CA562000B42BB3 /* fancyfluids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fancyfluids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CB09815CA562000B42BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C90CB09A15CA562000B42BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C90CB09C15CA562000B42BB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C90CB0A015CA562000B42BB3 /* fancyfluids-Info.plist */ = {isa = PBXFileReference; path = "fancyfluids-Info.plist"; sourceTree = "<group>"; };
+		C90CB0A215CA562000B42BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C90CB0A415CA562000B42BB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C90CB0A615CA562000B42BB3 /* fancyfluids-Prefix.pch */ = {isa = PBXFileReference; path = "fancyfluids-Prefix.pch"; sourceTree = "<group>"; };
+		C90CB0A715CA562000B42BB3 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C90CB0A815CA562000B42BB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C90CB0AF15CA562000B42BB3 /* fancyfluidsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fancyfluidsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CB0B015CA562000B42BB3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C90CB0B815CA562000B42BB3 /* fancyfluidsTests-Info.plist */ = {isa = PBXFileReference; path = "fancyfluidsTests-Info.plist"; sourceTree = "<group>"; };
+		C90CB0BA15CA562000B42BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C90CB0BC15CA562000B42BB3 /* fancyfluidsTests.h */ = {isa = PBXFileReference; path = fancyfluidsTests.h; sourceTree = "<group>"; };
+		C90CB0BD15CA562000B42BB3 /* fancyfluidsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fancyfluidsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90CB09115CA562000B42BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CB09915CA562000B42BB3 /* UIKit.framework in Frameworks */,
+				C90CB09B15CA562000B42BB3 /* Foundation.framework in Frameworks */,
+				C90CB09D15CA562000B42BB3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CB0AB15CA562000B42BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CB0B115CA562000B42BB3 /* SenTestingKit.framework in Frameworks */,
+				C90CB0B215CA562000B42BB3 /* UIKit.framework in Frameworks */,
+				C90CB0B315CA562000B42BB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90CB08915CA562000B42BB3 = {
+			isa = PBXGroup;
+			children = (
+				C90CB09E15CA562000B42BB3 /* fancyfluids */,
+				C90CB0B615CA562000B42BB3 /* fancyfluidsTests */,
+				C90CB09715CA562000B42BB3 /* Frameworks */,
+				C90CB09515CA562000B42BB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90CB09515CA562000B42BB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90CB09415CA562000B42BB3 /* fancyfluids.app */,
+				C90CB0AF15CA562000B42BB3 /* fancyfluidsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90CB09715CA562000B42BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90CB09815CA562000B42BB3 /* UIKit.framework */,
+				C90CB09A15CA562000B42BB3 /* Foundation.framework */,
+				C90CB09C15CA562000B42BB3 /* CoreGraphics.framework */,
+				C90CB0B015CA562000B42BB3 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C90CB09E15CA562000B42BB3 /* fancyfluids */ = {
+			isa = PBXGroup;
+			children = (
+				C90CB0A715CA562000B42BB3 /* AppDelegate.h */,
+				C90CB0A815CA562000B42BB3 /* AppDelegate.m */,
+				C90CB09F15CA562000B42BB3 /* Supporting Files */,
+			);
+			path = fancyfluids;
+			sourceTree = "<group>";
+		};
+		C90CB09F15CA562000B42BB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90CB0A015CA562000B42BB3 /* fancyfluids-Info.plist */,
+				C90CB0A115CA562000B42BB3 /* InfoPlist.strings */,
+				C90CB0A415CA562000B42BB3 /* main.m */,
+				C90CB0A615CA562000B42BB3 /* fancyfluids-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90CB0B615CA562000B42BB3 /* fancyfluidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90CB0BC15CA562000B42BB3 /* fancyfluidsTests.h */,
+				C90CB0BD15CA562000B42BB3 /* fancyfluidsTests.m */,
+				C90CB0B715CA562000B42BB3 /* Supporting Files */,
+			);
+			path = fancyfluidsTests;
+			sourceTree = "<group>";
+		};
+		C90CB0B715CA562000B42BB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90CB0B815CA562000B42BB3 /* fancyfluidsTests-Info.plist */,
+				C90CB0B915CA562000B42BB3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90CB09315CA562000B42BB3 /* fancyfluids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90CB0C115CA562000B42BB3 /* Build configuration list for PBXNativeTarget "fancyfluids" */;
+			buildPhases = (
+				C90CB09015CA562000B42BB3 /* Sources */,
+				C90CB09115CA562000B42BB3 /* Frameworks */,
+				C90CB09215CA562000B42BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fancyfluids;
+			productName = fancyfluids;
+			productReference = C90CB09415CA562000B42BB3 /* fancyfluids.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90CB0AE15CA562000B42BB3 /* fancyfluidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90CB0C415CA562000B42BB3 /* Build configuration list for PBXNativeTarget "fancyfluidsTests" */;
+			buildPhases = (
+				C90CB0AA15CA562000B42BB3 /* Sources */,
+				C90CB0AB15CA562000B42BB3 /* Frameworks */,
+				C90CB0AC15CA562000B42BB3 /* Resources */,
+				C90CB0AD15CA562000B42BB3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90CB0B515CA562000B42BB3 /* PBXTargetDependency */,
+			);
+			name = fancyfluidsTests;
+			productName = fancyfluidsTests;
+			productReference = C90CB0AF15CA562000B42BB3 /* fancyfluidsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90CB08B15CA562000B42BB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Carnegie Mellon University";
+			};
+			buildConfigurationList = C90CB08E15CA562000B42BB3 /* Build configuration list for PBXProject "fancyfluids" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C90CB08915CA562000B42BB3;
+			productRefGroup = C90CB09515CA562000B42BB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90CB09315CA562000B42BB3 /* fancyfluids */,
+				C90CB0AE15CA562000B42BB3 /* fancyfluidsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90CB09215CA562000B42BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CB0A315CA562000B42BB3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CB0AC15CA562000B42BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CB0BB15CA562000B42BB3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C90CB0AD15CA562000B42BB3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90CB09015CA562000B42BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CB0A515CA562000B42BB3 /* main.m in Sources */,
+				C90CB0A915CA562000B42BB3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90CB0AA15CA562000B42BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90CB0BE15CA562000B42BB3 /* fancyfluidsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90CB0B515CA562000B42BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90CB09315CA562000B42BB3 /* fancyfluids */;
+			targetProxy = C90CB0B415CA562000B42BB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90CB0A115CA562000B42BB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90CB0A215CA562000B42BB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C90CB0B915CA562000B42BB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90CB0BA15CA562000B42BB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90CB0BF15CA562000B42BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90CB0C015CA562000B42BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90CB0C215CA562000B42BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fancyfluids/fancyfluids-Prefix.pch";
+				INFOPLIST_FILE = "fancyfluids/fancyfluids-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C90CB0C315CA562000B42BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fancyfluids/fancyfluids-Prefix.pch";
+				INFOPLIST_FILE = "fancyfluids/fancyfluids-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C90CB0C515CA562000B42BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/fancyfluids.app/fancyfluids";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fancyfluids/fancyfluids-Prefix.pch";
+				INFOPLIST_FILE = "fancyfluidsTests/fancyfluidsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C90CB0C615CA562000B42BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/fancyfluids.app/fancyfluids";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fancyfluids/fancyfluids-Prefix.pch";
+				INFOPLIST_FILE = "fancyfluidsTests/fancyfluidsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90CB08E15CA562000B42BB3 /* Build configuration list for PBXProject "fancyfluids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CB0BF15CA562000B42BB3 /* Debug */,
+				C90CB0C015CA562000B42BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90CB0C115CA562000B42BB3 /* Build configuration list for PBXNativeTarget "fancyfluids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CB0C215CA562000B42BB3 /* Debug */,
+				C90CB0C315CA562000B42BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C90CB0C415CA562000B42BB3 /* Build configuration list for PBXNativeTarget "fancyfluidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90CB0C515CA562000B42BB3 /* Debug */,
+				C90CB0C615CA562000B42BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90CB08B15CA562000B42BB3 /* Project object */;
+}
