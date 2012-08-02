@@ -33,6 +33,7 @@
     self = [super init];
     if (self) {
         self.path = path;
+        self.shaders = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -62,7 +63,15 @@
             break;
     }
     NSString* shader_path = [[NSBundle mainBundle] pathForResource:name ofType:extension inDirectory:self.path];
+    if (nil == shader_path) {
+        NSLog(@"Unable to find path for shader with name %@ and extension %@", name, extension);
+        return NO;
+    }
     NSString* shader_text = [NSString stringWithContentsOfFile:shader_path encoding:NSUTF8StringEncoding error:NULL];
+    if (nil == shader_text) {
+        NSLog(@"Unable to load shader from path %@", shader_path);
+        return NO;
+    }
     const GLchar* shader_text_utf8 = (const GLchar*)[shader_text UTF8String];
     GLint shader_text_length = [shader_text length];
     
@@ -73,7 +82,7 @@
     GLint did_compile;
     glGetShaderiv(shader_id, GL_COMPILE_STATUS, &did_compile);
     if (did_compile != GL_TRUE) {
-        NSLog(@"Failed to compile shader with name %@ and type %d.", name, type);
+        NSLog(@"Failed to compile shader with name %@ and extension %@.", name, extension);
 #if defined(DEBUG)
         GLint log_length;
         glGetShaderiv(shader_id, GL_INFO_LOG_LENGTH, &log_length);
@@ -92,11 +101,12 @@
     }
 }
 
-- (TTCShaderProgram*) createProgramWithShaders:(NSArray*)shader_names error:(NSError**)error {
+- (TTCShaderProgram*) programWithShaders:(NSArray*)shader_names error:(NSError**)error {
     NSMutableArray* shader_ids = [NSMutableArray array];
     for (NSString* shader_name in shader_names) {
         NSNumber* shader_id = [self.shaders objectForKey:shader_name];
         if (nil == shader_id) {
+            NSLog(@"Could not find shader with name %@.", shader_name);
             if (error != NULL) {
                 NSMutableDictionary* error_details = [NSMutableDictionary dictionary];
                 [error_details setValue:[NSString stringWithFormat:@"Shader %@ not found", shader_name] forKey:NSLocalizedDescriptionKey];
@@ -107,7 +117,7 @@
         [shader_ids addObject:shader_id];
     }
     
-    TTCShaderProgram* program = [TTCShaderProgram new];
+    TTCShaderProgram* program = [[TTCShaderProgram alloc] init];
     BOOL success = [program createFromShaders:shader_ids];
     if (!success) {
         if (error != NULL) {

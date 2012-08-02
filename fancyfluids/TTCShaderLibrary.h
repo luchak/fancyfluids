@@ -15,6 +15,6 @@
 - (id) initWithBasePath:(NSString*)path;
 - (BOOL) compileFragmentShaderWithName:(NSString*)name;
 - (BOOL) compileVertexShaderWithName:(NSString*)name;
-- (TTCShaderProgram*) createProgramWithShaders:(NSArray*)shader_names error:(NSError**)error;
+- (TTCShaderProgram*) programWithShaders:(NSArray*)shader_names error:(NSError**)error;
 
 @end

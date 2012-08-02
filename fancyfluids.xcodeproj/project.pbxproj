@@ -25,6 +25,8 @@
 		C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */; };
 		C95C188D15CAFF6300BE1095 /* TTCShaderLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C188C15CAFF6300BE1095 /* TTCShaderLibrary.m */; };
 		C9AFA57715CB151900134FE5 /* TTCShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AFA57615CB151900134FE5 /* TTCShaderProgram.m */; };
+		C9AFA57E15CB345800134FE5 /* vertex_test.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C9AFA57D15CB345800134FE5 /* vertex_test.vsh */; };
+		C9AFA58015CB348700134FE5 /* fragment_test.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C9AFA57F15CB348700134FE5 /* fragment_test.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		C95C188C15CAFF6300BE1095 /* TTCShaderLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCShaderLibrary.m; sourceTree = "<group>"; };
 		C9AFA57515CB151900134FE5 /* TTCShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCShaderProgram.h; sourceTree = "<group>"; };
 		C9AFA57615CB151900134FE5 /* TTCShaderProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCShaderProgram.m; sourceTree = "<group>"; };
+		C9AFA57D15CB345800134FE5 /* vertex_test.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex_test.vsh; sourceTree = "<group>"; };
+		C9AFA57F15CB348700134FE5 /* fragment_test.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment_test.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		C90CB09E15CA562000B42BB3 /* fancyfluids */ = {
 			isa = PBXGroup;
 			children = (
+				C9AFA57C15CB341B00134FE5 /* Shaders */,
 				C90CB0A715CA562000B42BB3 /* AppDelegate.h */,
 				C90CB0A815CA562000B42BB3 /* AppDelegate.m */,
 				C90CB09F15CA562000B42BB3 /* Supporting Files */,
@@ -171,6 +176,15 @@
 				C90CB0B915CA562000B42BB3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9AFA57C15CB341B00134FE5 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C9AFA57D15CB345800134FE5 /* vertex_test.vsh */,
+				C9AFA57F15CB348700134FE5 /* fragment_test.fsh */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +260,8 @@
 			files = (
 				C90CB0A315CA562000B42BB3 /* InfoPlist.strings in Resources */,
 				C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */,
+				C9AFA57E15CB345800134FE5 /* vertex_test.vsh in Resources */,
+				C9AFA58015CB348700134FE5 /* fragment_test.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

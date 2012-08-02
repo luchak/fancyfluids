@@ -16,8 +16,8 @@ typedef struct {
 @interface TTCShaderProgram () {
     BOOL _program_created;
     GLuint _program_id;
-    NSDictionary* _uniform_info;
-    NSDictionary* _attrib_info;
+    NSMutableDictionary* _uniform_info;
+    NSMutableDictionary* _attrib_info;
 }
 
 - (BOOL) linkUsingShaders:(NSArray*)shaders;
@@ -26,8 +26,8 @@ typedef struct {
 
 @property (assign) BOOL program_created;
 @property (assign) GLuint program_id;
-@property (strong,nonatomic) NSDictionary* uniform_info;
-@property (strong,nonatomic) NSDictionary* attrib_info;
+@property (strong,nonatomic) NSMutableDictionary* uniform_info;
+@property (strong,nonatomic) NSMutableDictionary* attrib_info;
 
 @end
 
@@ -42,6 +42,8 @@ typedef struct {
     self = [super init];
     if (self) {
         self.program_created = NO;
+        self.uniform_info = [NSMutableDictionary dictionary];
+        self.attrib_info = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -128,7 +130,7 @@ typedef struct {
         glGetActiveUniform(self.program_id, i, max_length, &length, &size, &(variable_info.type), name);        
         variable_info.location = glGetUniformLocation(self.program_id, name);
 
-        [self.uniform_info setValue:[NSValue valueWithBytes:&variable_info objCType:@encode(VariableInfo)] forKey:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
+        [self.uniform_info setObject:[NSValue valueWithBytes:&variable_info objCType:@encode(VariableInfo)] forKey:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
     }
     free(name);
 }
@@ -146,7 +148,7 @@ typedef struct {
         glGetActiveAttrib(self.program_id, i, max_length, &length, &size, &(variable_info.type), name);        
         variable_info.location = glGetAttribLocation(self.program_id, name);
         
-        [self.attrib_info setValue:[NSValue valueWithBytes:&variable_info objCType:@encode(VariableInfo)] forKey:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
+        [self.attrib_info setObject:[NSValue valueWithBytes:&variable_info objCType:@encode(VariableInfo)] forKey:[NSString stringWithCString:name encoding:NSUTF8StringEncoding]];
     }
     free(name);
 }
