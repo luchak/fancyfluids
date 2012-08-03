@@ -26,8 +26,8 @@ typedef struct {
 - (void) fillUniformInfo;
 - (void) fillAttribInfo;
 
-@property (assign) BOOL program_created;
-@property (readwrite,assign) GLuint program_id;
+@property (nonatomic,assign) BOOL program_created;
+@property (nonatomic,readwrite,assign) GLuint program_id;
 @property (strong,nonatomic) NSMutableDictionary* uniform_info;
 @property (strong,nonatomic) NSMutableDictionary* attrib_info;
 
@@ -91,6 +91,17 @@ typedef struct {
     } else {
         return YES;
     }
+}
+
+- (void) bindTexture2D:(GLuint)texture_id atIndex:(int)index toUniform:(NSString*)uniform {
+    glUseProgram(self.program_id);
+    glUniform1i([self locationForUniformWithName:uniform], index);
+    glActiveTexture(GL_TEXTURE0 + index);
+    glBindTexture(GL_TEXTURE_2D, texture_id);
+}
+
+- (int) locationForUniformWithName:(NSString*)name {
+    return [((NSNumber*)[self.attrib_info objectForKey:name]) integerValue];
 }
 
 - (BOOL) linkUsingShaders:(NSArray*) shaders {

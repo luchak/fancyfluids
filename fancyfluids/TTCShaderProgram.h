@@ -18,7 +18,9 @@ enum TTCShaderAttrib {
 
 - (BOOL) createFromShaders:(NSArray*)shaders;
 - (BOOL) validate;
+- (void) bindTexture2D:(GLuint)texture_id atIndex:(int)index toUniform:(NSString*)uniform;
+- (int) locationForUniformWithName:(NSString*)name;
 
-@property (readonly,assign) GLuint program_id;
+@property (nonatomic,readonly,assign) GLuint program_id;
 
 @end

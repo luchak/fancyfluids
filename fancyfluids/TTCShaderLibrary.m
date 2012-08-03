@@ -18,7 +18,7 @@
 - (BOOL) compileShaderWithName:(NSString*)name ofType:(GLenum) type;
 
 @property (strong, nonatomic) NSString* path;
-@property (strong, atomic) NSMutableDictionary* shaders;
+@property (strong, nonatomic) NSMutableDictionary* shaders;
 
 @end
 

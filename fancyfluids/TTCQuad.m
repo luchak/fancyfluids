@@ -18,9 +18,9 @@
     GLuint _ibo;
 }
 
-@property (assign) GLuint vao;
-@property (assign) GLuint vbo;
-@property (assign) GLuint ibo;
+@property (nonatomic, assign) GLuint vao;
+@property (nonatomic, assign) GLuint vbo;
+@property (nonatomic, assign) GLuint ibo;
 
 @end
 

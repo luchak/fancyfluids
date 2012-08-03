@@ -25,9 +25,12 @@
 		C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90CB0D415CA5A9200B42BB3 /* iPadMainStoryboard.storyboard */; };
 		C95C188D15CAFF6300BE1095 /* TTCShaderLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C188C15CAFF6300BE1095 /* TTCShaderLibrary.m */; };
 		C95C189515CB524000BE1095 /* TTCQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C189415CB524000BE1095 /* TTCQuad.m */; };
+		C95C189915CB77EA00BE1095 /* TTCSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C189815CB77EA00BE1095 /* TTCSurface.m */; };
+		C95C189B15CB8DA100BE1095 /* sum.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C95C189A15CB8DA100BE1095 /* sum.fsh */; };
+		C95C189D15CB98B400BE1095 /* show_texture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C95C189C15CB98B400BE1095 /* show_texture.fsh */; };
 		C9AFA57715CB151900134FE5 /* TTCShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AFA57615CB151900134FE5 /* TTCShaderProgram.m */; };
-		C9AFA57E15CB345800134FE5 /* vertex_test.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C9AFA57D15CB345800134FE5 /* vertex_test.vsh */; };
-		C9AFA58015CB348700134FE5 /* fragment_test.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C9AFA57F15CB348700134FE5 /* fragment_test.fsh */; };
+		C9AFA57E15CB345800134FE5 /* vertex_default.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C9AFA57D15CB345800134FE5 /* vertex_default.vsh */; };
+		C9AFA58015CB348700134FE5 /* mandelbrot.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C9AFA57F15CB348700134FE5 /* mandelbrot.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +70,14 @@
 		C95C188C15CAFF6300BE1095 /* TTCShaderLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCShaderLibrary.m; sourceTree = "<group>"; };
 		C95C189315CB524000BE1095 /* TTCQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCQuad.h; sourceTree = "<group>"; };
 		C95C189415CB524000BE1095 /* TTCQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCQuad.m; sourceTree = "<group>"; };
+		C95C189715CB77EA00BE1095 /* TTCSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCSurface.h; sourceTree = "<group>"; };
+		C95C189815CB77EA00BE1095 /* TTCSurface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCSurface.m; sourceTree = "<group>"; };
+		C95C189A15CB8DA100BE1095 /* sum.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sum.fsh; sourceTree = "<group>"; };
+		C95C189C15CB98B400BE1095 /* show_texture.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = show_texture.fsh; sourceTree = "<group>"; };
 		C9AFA57515CB151900134FE5 /* TTCShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCShaderProgram.h; sourceTree = "<group>"; };
 		C9AFA57615CB151900134FE5 /* TTCShaderProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCShaderProgram.m; sourceTree = "<group>"; };
-		C9AFA57D15CB345800134FE5 /* vertex_test.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex_test.vsh; sourceTree = "<group>"; };
-		C9AFA57F15CB348700134FE5 /* fragment_test.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment_test.fsh; sourceTree = "<group>"; };
+		C9AFA57D15CB345800134FE5 /* vertex_default.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex_default.vsh; sourceTree = "<group>"; };
+		C9AFA57F15CB348700134FE5 /* mandelbrot.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mandelbrot.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +156,8 @@
 				C9AFA57615CB151900134FE5 /* TTCShaderProgram.m */,
 				C95C189315CB524000BE1095 /* TTCQuad.h */,
 				C95C189415CB524000BE1095 /* TTCQuad.m */,
+				C95C189715CB77EA00BE1095 /* TTCSurface.h */,
+				C95C189815CB77EA00BE1095 /* TTCSurface.m */,
 			);
 			path = fancyfluids;
 			sourceTree = "<group>";
@@ -186,8 +195,10 @@
 		C9AFA57C15CB341B00134FE5 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				C9AFA57D15CB345800134FE5 /* vertex_test.vsh */,
-				C9AFA57F15CB348700134FE5 /* fragment_test.fsh */,
+				C9AFA57D15CB345800134FE5 /* vertex_default.vsh */,
+				C9AFA57F15CB348700134FE5 /* mandelbrot.fsh */,
+				C95C189A15CB8DA100BE1095 /* sum.fsh */,
+				C95C189C15CB98B400BE1095 /* show_texture.fsh */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -265,8 +276,10 @@
 			files = (
 				C90CB0A315CA562000B42BB3 /* InfoPlist.strings in Resources */,
 				C90CB0D515CA5A9200B42BB3 /* iPadMainStoryboard.storyboard in Resources */,
-				C9AFA57E15CB345800134FE5 /* vertex_test.vsh in Resources */,
-				C9AFA58015CB348700134FE5 /* fragment_test.fsh in Resources */,
+				C9AFA57E15CB345800134FE5 /* vertex_default.vsh in Resources */,
+				C95C189B15CB8DA100BE1095 /* sum.fsh in Resources */,
+				C9AFA58015CB348700134FE5 /* mandelbrot.fsh in Resources */,
+				C95C189D15CB98B400BE1095 /* show_texture.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +320,7 @@
 				C95C188D15CAFF6300BE1095 /* TTCShaderLibrary.m in Sources */,
 				C9AFA57715CB151900134FE5 /* TTCShaderProgram.m in Sources */,
 				C95C189515CB524000BE1095 /* TTCQuad.m in Sources */,
+				C95C189915CB77EA00BE1095 /* TTCSurface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
