@@ -8,6 +8,8 @@
 
 #import "TTCShaderProgram.h"
 
+#import <GLKit/GLKit.h>
+
 typedef struct {
     GLuint location;
     GLenum type;
@@ -25,7 +27,7 @@ typedef struct {
 - (void) fillAttribInfo;
 
 @property (assign) BOOL program_created;
-@property (assign) GLuint program_id;
+@property (readwrite,assign) GLuint program_id;
 @property (strong,nonatomic) NSMutableDictionary* uniform_info;
 @property (strong,nonatomic) NSMutableDictionary* attrib_info;
 
@@ -75,6 +77,7 @@ typedef struct {
     GLint validated_successfully;
     glGetProgramiv(self.program_id, GL_VALIDATE_STATUS, &validated_successfully);
     if (!validated_successfully) {
+        NSLog(@"Program %d failed to validate.", self.program_id);
         GLint log_length;
         glGetProgramiv(self.program_id, GL_INFO_LOG_LENGTH, &log_length);
 
@@ -94,6 +97,10 @@ typedef struct {
     for (NSNumber* shader_id in shaders) {
         glAttachShader(self.program_id, [shader_id intValue]);
     }
+    
+    glBindAttribLocation(self.program_id, TTC_ATTRIB_POSITION, "v_position");
+    glBindAttribLocation(self.program_id, TTC_ATTRIB_TEXCOORD, "v_texcoord");
+    
     glLinkProgram(self.program_id);
     
     GLint did_link;

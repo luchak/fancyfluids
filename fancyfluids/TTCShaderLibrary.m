@@ -8,6 +8,8 @@
 
 #import "TTCShaderLibrary.h"
 
+#import <GLKit/GLKit.h>
+
 @interface TTCShaderLibrary () {
     NSString* _path;
     NSMutableDictionary* _shaders;

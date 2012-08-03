@@ -7,13 +7,17 @@
 //
 
 #import "FluidViewController.h"
+
+#import "TTCQuad.h"
 #import "TTCShaderLibrary.h"
 
 @interface FluidViewController () {
     TTCShaderLibrary* _shader_library;
+    TTCShaderProgram* _program;
 }
 @property (strong, nonatomic) EAGLContext* context;
 @property (strong, nonatomic) TTCShaderLibrary* shader_library;
+@property (strong, nonatomic) TTCShaderProgram* shader_program;
 
 @end
 
@@ -21,6 +25,7 @@
 
 @synthesize context = _context;
 @synthesize shader_library = _shader_library;
+@synthesize shader_program = _shader_program;
 
 - (void)viewDidLoad
 {
@@ -39,8 +44,8 @@
     self.shader_library = [[TTCShaderLibrary alloc] init];
     [self.shader_library compileVertexShaderWithName:@"vertex_test"];
     [self.shader_library compileFragmentShaderWithName:@"fragment_test"];
-    TTCShaderProgram* program = [self.shader_library programWithShaders:[NSArray arrayWithObjects:@"fragment_test", @"vertex_test", nil] error:NULL];
-    [program validate];
+    self.shader_program = [self.shader_library programWithShaders:[NSArray arrayWithObjects:@"fragment_test", @"vertex_test", nil] error:NULL];
+    [self.shader_program validate];
 }
 
 - (void)viewDidUnload
@@ -53,6 +58,7 @@
     self.context = nil;
     
     self.shader_library = nil;
+    self.shader_program = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -63,8 +69,10 @@
 #pragma mark - GLKViewDelegate
 
 - (void)glkView:(GLKView*)view drawInRect:(CGRect)rect {
-    glClearColor(1.0, 0.0, 0.0, 1.0);
+    glClearColor(0.0, 0.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
+    
+    [[TTCQuad quad] drawWithProgram:self.shader_program];
 }
 
 #pragma mark - GLKViewControllerDelegate
